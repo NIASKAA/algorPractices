@@ -1,1 +1,3 @@
 # algorPractices
+
+Storage of algorithms. 
