@@ -32,12 +32,14 @@ permalink: /questions/javascript-questions/index.html
 
 * Explain `Function.prototype.bind`. -Bind() creates a new function that has the this keyword, it can help pass in value easier into other functions-
 
-* What's the difference between feature detection, feature inference, and using the UA string?
+* What's the difference between feature detection, feature inference, and using the UA string? -Feature detection will always check if the browser supports the code and run different codes if it doesn't, feature infernce will also check but uses other functions because it thinks other countermeasures already exist, UA string will use network protocol to identify application type-
+
 * Explain "hoisting". -It is a way to describe the behavior of how variables will move to the top of the function or code, usually this also means that those set variables will render out first-
 
-* Describe event bubbling. -This goes hand to hand with event delegation where the event triggers a dom element and will group it all up-
+* Describe event bubbling. -This goes hand to hand with event delegation where it starts from target element to the top element-
 
-* Describe event capturing.
+* Describe event capturing. -The opposite of event bubbling where it starts from the top element to the target element-
+
 * What's the difference between an "attribute" and a "property"? -Attributes are defined on the HTML side while properties are defined in DOM-
 
 * What are the pros and cons of extending built-in JavaScript objects? -Pros are when you want to create a polyfill, which is your own implementation for a certain method, cons are possible errors that can happen and will break methods-
@@ -50,14 +52,17 @@ permalink: /questions/javascript-questions/index.html
 
 * What is strict mode? What are some of the advantages/disadvantages of using it? -It enables strict mode to a restricted version of javascript, some advantages are it makes it impossible to create accidental global variables, requires function parameter to be unique and can catch certain errors. Disadvantages are it will be lacking certain keywords or even features-
 
-* What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript?
+* What are some of the advantages/disadvantages of writing JavaScript code in a language that compiles to JavaScript? -The advantages are it can fix some problems in Javascript and let you write better quality code, disadvantages are it will require a build process, debugging can be annoying if you dont know how to do so-
+
 * What tools and techniques do you use debugging JavaScript code? -Chrome devtools, console.log, any debug statements-
 
-* Explain the difference between mutable and immutable objects.
-  * What is an example of an immutable object in JavaScript?
-  * What are the pros and cons of immutability?
-  * How can you achieve immutability in your own code?
-* Explain the difference between synchronous and asynchronous functions.
+* Explain the difference between mutable and immutable objects. -Mutable object is when an object state can be modified after it's creation while immutable is the opposite of that-
+  * What is an example of an immutable object in JavaScript? -Math, Date-
+  * What are the pros and cons of immutability? -It is easier to create objects that are immutable but bad implementations of immutable data structures would be bad performance-
+  * How can you achieve immutability in your own code? -There are some libraries like immutable.js that can help you with that, or using const-
+
+* Explain the difference between synchronous and asynchronous functions. -Async functions accepts a callback as parameter and will run immediately. It is better to run bigger operations with async func (querying database) so it wont freeze the UI. Sync func will pause the program if it does not complete the current statement-
+
 * What is event loop? -Event loop is when it checks the call stack and keeps track of the functions, it will send in new functions and dequeue old ones and repeats cycle-
   * What is the difference between call stack and task queue? -Call stack monitors and task will perform the task-
 
@@ -93,7 +98,8 @@ const {p, q} = o;-
 
 * Why you might want to create static class members? -Static class are not tied to specific instance of class-
 
-* What is the difference between `while` and `do-while` loops in JavaScript?
+* What is the difference between `while` and `do-while` loops in JavaScript? -So basically while loop will run under the condition given is true but in a do while loop, the condition given is check after the loop goes through and will iterate if the condition is true. So do while loop will always run once whether it is false or true-
+
 * What is a promise? Where and how would you use promise? -A promise is an object that will produce a value whether it is fulfilled, rejected or pending. Some use case of it is when you want to avoid callback hell, and making async codes-
 
 
@@ -114,12 +120,6 @@ const duplicate = (arr) => [...arr, ...arr];
 duplicate([1,2,3,4,5]);
 
 * Create a for loop that iterates up to `100` while outputting **"fizz"** at multiples of `3`, **"buzz"** at multiples of `5` and **"fizzbuzz"** at multiples of `3` and `5`
-* What will be returned by each of these?
-```javascript
-console.log("hello" || "world")
-console.log("foo" && "bar")
-```
-
 for (var x=1; x <= 100; x++){
     if( x % 3 && x % 5 ) {
         document.write(x);
@@ -134,5 +134,14 @@ for (var x=1; x <= 100; x++){
     document.write('<br>'); 
 }​
 
+* What will be returned by each of these?
+```javascript
+console.log("hello" || "world") 
+console.log("foo" && "bar")
+```
 
 * Write an immediately invoked function expression (IIFE)
+
+(function bob() {
+  //
+}) ()
