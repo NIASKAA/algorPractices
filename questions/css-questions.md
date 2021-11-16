@@ -12,7 +12,7 @@ permalink: /questions/css-questions/index.html
 
 * Describe z-index and how stacking context is formed. -it is a property that lets you stack elements on a vertical manner which will overlap things. Z-index can only affect elements that have a posistion property though-
 
-* Describe BFC (Block Formatting Context) and how it works. -It is part of the visual css rendering of a page that block boxes are laid out-
+* Describe BFC (Block Formatting Context) and how it works. -A Css rendering method that wraps around your element like a mini layout-
 
 * What are the various clearing techniques and which is appropriate for what context? -empty div, clearfix, and overflow method-
 
@@ -41,7 +41,7 @@ permalink: /questions/css-questions/index.html
 
 * Explain how a browser determines what elements match a CSS selector. -From my understanding is that browser will match the select from the rightmost to the left. The shorter the selector, the faster the browser will match the element with the right selector-
 
-* Describe pseudo-elements and discuss what they are used for. -It is a keyboard to add in a selector that lets you style a specific part of the element-
+* Describe pseudo-elements and discuss what they are used for. -It is a keyword to add in a selector that lets you style a specific part of the element-
 
 * Explain your understanding of the box model and how you would tell the browser in CSS to render your layout in different box models. -So basically the box model will tell you how much space a block level element takes up, it will also tell you if there are any overlap things and all the dimensions in the element-
 
@@ -63,7 +63,7 @@ permalink: /questions/css-questions/index.html
 
 * Have you ever worked with retina graphics? If so, when and what techniques did you use? -Very few times, I do believe the times I used it was when I had to test the screen of an Iphone 12 so using @media with webkit pixel ratio-
 
-* Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why? -translate is a vabue of transform so it does not trigger browser reflow. Using translate() will still take up the original element. The main idea is that translate is more efficient and will result in shorter paint times for smoother animations-
+* Is there any reason you'd want to use `translate()` instead of *absolute positioning*, or vice-versa? And why? -translate is a value of transform so it does not trigger browser reflow. Using translate() will still take up the original element. The main idea is that translate is more efficient and will result in shorter paint times for smoother animations-
 
 * How is clearfix css property useful? -makes wrapping an element that didn't fit much easier-
 
