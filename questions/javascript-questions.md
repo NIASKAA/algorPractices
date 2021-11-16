@@ -9,12 +9,12 @@ permalink: /questions/javascript-questions/index.html
 * Explain how `this` works in JavaScript. -Usually means the object that owns the method-
   * Can you give an example of one of the ways that working with `this` has changed in ES6? -ES6 lets you use arrow functions to an enclosing scope-
 
-* Explain how prototypal inheritance works. -It basically is a reference to another object, if the object property is not found it will look for one until it finds one with the proto property-
+* Explain how prototypal inheritance works. -It basically is a reference to another object, if the object property is not found it will look for one until it finds one with the proto property, also in short, extending properties and method for other functions-
 
 * What's the difference between a variable that is: `null`, `undefined` or undeclared? -undeclare is when a variable does not have a var set. undefined is when the variable is not define nor does it have a type, null just doesnt have a value-
   * How would you go about checking for any of these states? -console logging-
 
-* What is a closure, and how/why would you use one? -They are expressions that refers to local variables of the outer function, it is use for data privacy-
+* What is a closure, and how/why would you use one? -They are expressions that refers to local variables of the outer function, it is use for data privacy, also could be grouping functions into a small funciton call in a outer scope -
 
 * What language constructions do you use for iterating over object properties and array items? -for-in loops and object.keys() for object and for, forEach, for arrays-
 
@@ -145,3 +145,14 @@ console.log("foo" && "bar")
 (function bob() {
   //
 }) ()
+
+
+* Redux explanation 
+
+-First we start off with our components dispatching actions that will go into our reducers that will now go into the store of the application and trigger a subscription action that 
+will pass an updated version of the state as props that will go back to our component-
+
+* OAuth 2.0 simple explanation
+
+-We have 3 different locations to start off with, the google auth, our user, and the client server. First our user will attempt to connect to the server which will trigger 
+a response to bring our user to google and connect. Then google will give a response to our user to give authorization that will allow the consent to login, which will unlock the content-

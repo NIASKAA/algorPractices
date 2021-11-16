@@ -7,6 +7,7 @@ permalink: /questions/html-questions/index.html
 * What does a `doctype` do? -it tells what versions of HTML the page will be using-
 
 * How do you serve a page with content in multiple languages? -<html lang="en"> and using span lang-
+
 * What kind of things must you be wary of when designing or developing for multilingual sites? -imo the layout is important so nothing breaks when a text content is, colors, formatting the dates because different countries uses different format-
 
 * What are `data-` attributes good for? -good for storing extra information on standard semantic HTML elements, also can store custom private data to the page, embeding data-
@@ -21,7 +22,7 @@ permalink: /questions/html-questions/index.html
 
 * What is progressive rendering? -the way of rendering portions of a page and make it presentable to the client without waiting for the whole page to load-
 
-* Why you would use a `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute. -srcset basically lets you declare a list of image sizes so the browser set the resolution suitable, it does the process by first detechiong the client's resolution and it will then be able to display the right .jpg-
+* Why you would use a `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute. -srcset basically lets you declare a list of image sizes so the browser set the resolution suitable, it does the process by first detecting the client's resolution and it will then be able to display the right .jpg-
 
 * Have you used different HTML templating languages before? -Yes, used handlebars and react-
 
