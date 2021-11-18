@@ -76,16 +76,17 @@ console.log('four'); -one, two, three, four-
 Question: What is the difference between these four promises?
 ```javascript
 doSomething().then(function () {
-  return doSomethingElse();
+  return doSomethingElse(); 
 });
-
+-callback invoked-
 doSomething().then(function () {
   doSomethingElse();
 });
-
+-nothing will return so the next promise will execute but with undefined-
 doSomething().then(doSomethingElse());
-
+-doSomethingElse happens-
 doSomething().then(doSomethingElse);
+-passing a parameter after doSomething-
 ```
 
 Question: What will the code below output to the console and why?
