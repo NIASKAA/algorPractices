@@ -10,7 +10,7 @@ permalink: /questions/general-questions/index.html
 
 * What is a recent technical challenge you experienced and how did you solve it? -A recent one was learning how to structure my models in the API I'm creating, another one was learning how to use some of the packages and incorporate that into my code. For me, I usually would read or watch a video on how to use the package. Then proceed to test certains methods through trial and error-
 
-* When building a new web site or maintaining one, can you explain some techniques you have used to increase performance? Cleaning the code and erasing any unused lines, optimizing images, making the web as user friendly as possible (less redirects), making sure that each language doesnt have very chonky blocks of codes-
+* When building a new web site or maintaining one, can you explain some techniques you have used to increase performance? Cleaning the code and erasing any unused lines, optimizing images, making the web as user friendly as possible (less redirects), making sure that each language doesnt have very chonky   blocks of codes-
 
 * Can you describe some SEO best practices or techniques you have used lately? -For me, I use a lot of images in my Gunpla-Web so I made sure each image have an alt tag and have the best file format, I also went ahead and use cloudinary to host all my images so the file for the project doesn't rack up way too much storage, I also made sure that meta and title tag are updated and brief, most important I try to provide the best page speed possible-
 

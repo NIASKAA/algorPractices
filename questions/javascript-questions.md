@@ -32,7 +32,7 @@ permalink: /questions/javascript-questions/index.html
 
 * Explain `Function.prototype.bind`. -Bind() creates a new function that has the this keyword, it can help pass in value easier into other functions-
 
-* What's the difference between feature detection, feature inference, and using the UA string? -Feature detection will always check if the browser supports the code and run different codes if it doesn't, feature infernce will also check but uses other functions because it thinks other countermeasures already exist, UA string will use network protocol to identify application type-
+* What's the difference between feature detection, feature inference, and using the UA string? -Feature detection always will for certain features that exist in browsers, feature inference is when you have features determined and it will assume that the next features in your next app, UA String usually is data within the browser that you are using-
 
 * Explain "hoisting". -It is a way to describe the behavior of how variables will move to the top of the function or code, usually this also means that those set variables will render out first-
 
@@ -156,3 +156,16 @@ will pass an updated version of the state as props that will go back to our comp
 
 -We have 3 different locations to start off with, the google auth, our user, and the client server. First our user will attempt to connect to the server which will trigger 
 a response to bring our user to google and connect. Then google will give a response to our user to give authorization that will allow the consent to login, which will unlock the content-
+
+* Time Complexity
+O(1): Run time is independent of the input size of the problem.
+
+O(n): The problem requires a small amount of processing time for each element in the input. Linear.
+
+O(n²): The problem process all the pairs of the element. Quadratic.
+
+O(log n): When a big problem is solved by transforming it into a smaller size by some constant fraction. Logarithmic.
+
+O(n log n): When a problem is broken into smaller subproblems, solving them independently, and combining the solutions  Linearithmic.
+
+O(2^n): Exponential run time. To be avoided.
