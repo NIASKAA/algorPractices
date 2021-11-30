@@ -3,4 +3,16 @@
 // Solve without joining the digits array and modify the original array in place
 
 var plusOne = function(digits) {
+    let i = digits.length - 1;
+    let carry = 1;
+    let val = 0;
+
+    while (i >= 0 && carry) {
+      val = digits[i] + carry;
+      carry = Math.floor(val / 10);
+      digits[i] = val % 10;
+      i--;
+    }
+    if (carry) digits.unshift(carry);
+        return digits;
 };
